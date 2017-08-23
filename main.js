@@ -40,13 +40,12 @@ phina.define('MainScene', {
         // cir.fill = '#ffaaaa'
         // cir.radius = 100;
 
-        quartz = 100;
+        quartz = 0;
 
         var l1 = Label(quartz).addChildTo(this);
         var l2 = Label('SAINT QUARTZ').addChildTo(this);
 
         function updateQuartz(d) {
-            console.log(d, quartz);
             quartz += d;
             l1.text = quartz;
         }
